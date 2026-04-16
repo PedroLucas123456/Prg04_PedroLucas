@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  text-align: center;
 }
 
 header {
@@ -133,7 +134,7 @@ header p {
   color: #111827;
   transform: translateY(-2px);
 }
-@media (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   main {
     flex-direction: column;
   }
@@ -153,7 +154,7 @@ header p {
 }
 
 /* RESPONSIVIDADE - CELULAR */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header {
     padding: 20px 15px;
   }
@@ -183,6 +184,7 @@ header p {
 
   main {
     padding: 15px;
+    flex-direction: column;
   }
 
   section,
@@ -195,6 +197,21 @@ header p {
     text-align: center;
   }
 }
+
+@media (min-width: 1025px) {
+  main {
+    flex-direction: row;
+  }
+
+  section {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
+
 .login-container {
   max-width: 400px;
   margin: auto;
@@ -216,11 +233,6 @@ header p {
   color: white;
   border: none;
   border-radius: 8px;
-}
-
-body {
-  font-family: Arial;
-  text-align: center;
 }
 
 button {
