@@ -1,0 +1,162 @@
+/* RESET BASE (CELULAR PRIMEIRO) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header p {
+  font-size: 0.9rem;
+}
+
+/* MENU */
+nav {
+  background-color: #2563eb;
+  padding: 10px;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* celular */
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+
+#menu ul li {
+  width: 100%;
+  max-width: 250px;
+}
+
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* MAIN */
+main {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* celular */
+  gap: 15px;
+}
+
+section,
+aside {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ARTICLE */
+article {
+  margin-top: 15px;
+  background-color: #e0f2fe;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* BOTÃO */
+.botao-voltar {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111827;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* LOGIN */
+.login-container {
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ========================= */
+/* 📱 TABLET (>= 768px) */
+/* ========================= */
+@media (min-width: 768px) {
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #menu ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main {
+    flex-direction: column;
+  }
+}
+
+/* ========================= */
+/* 💻 DESKTOP (>= 1024px) */
+/* ========================= */
+@media (min-width: 1024px) {
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  section {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+  }
+
+  .botao-voltar {
+    width: auto;
+  }
+}
